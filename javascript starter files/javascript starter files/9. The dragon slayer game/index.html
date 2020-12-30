@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The dragon slayer game</title>
+</head>
+<body>
+
+  <script>
+    var ran = Math.random();
+    var ran2 = Math.random();
+    console.log(Math.round(ran*100));
+
+    var name= prompt("what is your name?");
+    var confirm1 = confirm("hello " + name + ", would you like to play?");
+    if(confirm1){
+      var fight = confirm("would you like to fight the dragon?");
+      if(fight){
+        if(ran > ran2){
+          alert("Congratulations, you killed the dragon!")
+        }else{
+          alert("Oh dear, you are dead.")
+        }
+      }else{
+        alert("the dragon killed you anyway");
+      }
+    }else{
+      alert("come back later");
+    }
+
+  </script>
+  
+</body>
+</html>
